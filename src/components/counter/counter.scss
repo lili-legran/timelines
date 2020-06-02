@@ -1,0 +1,25 @@
+.timelines {
+  &__step-counter {
+    display: inline-block;
+    margin-right: var(--margin-s);
+    text-align: center;
+    vertical-align: top;
+  }
+  &__step-counter_toggle {
+    display: inline-block;
+    border: 1px solid var(--text-color);
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__step-counter_value {
+    padding: 0 var(--padding-s);
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+  }
+  &__step-counter_title {
+    margin-bottom: var(--margin-xs);
+    line-height: 14px;
+    font-size: 14px;
+  }
+}

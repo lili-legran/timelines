@@ -1,0 +1,52 @@
+.timeline {
+  &__point {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+  }
+  &__point_label {
+    position: absolute;
+    color: var(--text-color);
+    font-size: 14px;
+    width: 50px;
+    text-align: center;
+    left: -20px;
+  }
+  &__point_label-top {
+    top: -25px;
+  }
+  &__point_label-bottom {
+    bottom: -25px;
+  }
+  &__point_label-first {
+    text-align: start;
+    left: 5px;
+  }
+  &__point_label-last {
+    left: -50px;
+    text-align: end;
+  }
+  &__point_completed {
+    background-color: var(--completed-color);
+  }
+  &__point_current {
+    background-color: var(--current-color);
+  }
+  &__point_incomplete {
+    border: 2px solid var(--incomplete-color);
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 737px) {
+  .timeline {
+    &__point_label {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.timelines {
+  padding: var(--padding-l);
+  &__control-btn {
+    display: block;
+    margin-bottom: var(--margin-m);
+  }
+  &__button {
+    margin-right: var(--margin-s);
+    font-size: 16px;
+    width: 270px;
+    padding: var(--padding-xs);
+    background-color: #b7df9d;
+    border: 1px solid #4ea21d;
+    color: #3f3c3c;
+    border-radius: 5px;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+      background-color: #90cb69;
+    }
+  }
+  &__option {
+    display: inline-block;
+    margin-bottom: var(--margin-m);
+  }
+}
+
+@media (max-width: 1024px) {
+  .timelines {
+    padding: var(--padding-l) var(--padding-m);
+    &__button {
+      display: block;
+      margin-bottom: var(--margin-s);
+    }
+    &__control-btn {
+      margin-bottom: var(--margin-m);
+    }
+    &__option {
+      margin-bottom: var(--margin-m);
+    }
+  }
+}
+
+@media (max-width: 737px) {
+  .timelines {
+    padding: var(--padding-l) var(--padding-s);
+  }
+}
